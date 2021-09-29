@@ -12,7 +12,7 @@ body {
   height: 100vh;
   color: #7280a7;
   background-color: #e0e8ff;
-  background-image: url("/images/pattern-background-mobile.svg");
+  background-image: url("./images/pattern-background-mobile.svg");
   background-repeat: repeat-x;
   background-position-x: center;
   background-position-y: top;
@@ -20,7 +20,7 @@ body {
 }
 @media (min-width: 450px) {
   body {
-    background-image: url("/images/pattern-background-desktop.svg");
+    background-image: url("./images/pattern-background-desktop.svg");
     background-size: auto;
   }
 }
