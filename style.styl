@@ -91,9 +91,9 @@ h1
   align-items center
   width 100%
   background-color $cery-pale-blue
-  padding 1rem 0
+  padding 1.5rem 0
   margin-bottom 2.5rem
-  margin-top 2.5rem
+  margin-top 2.75rem
   border-width 1px
   border-radius 0.8rem
 
@@ -103,10 +103,13 @@ h1
   > div:first-of-type
     display flex
     margin-left 1rem
+    @media (min-width 450px)
+      margin-left 1.5rem
 
   > a
     font-size 14px
     text-decoration underline
+    transition color,opacity 250ms
 
     &:hover
       opacity 0.7
@@ -135,6 +138,8 @@ h1
   margin-right 1rem
   color $bright-blue
   font-weight $font-bold
+  @media (min-width 450px)
+    margin-right 1.5rem
 
 
 .proceed-button
@@ -147,7 +152,8 @@ h1
   padding-top 1em
   padding-bottom 1em
   cursor pointer
-  box-shadow 0 12px 10px -1px rgba($bright-blue, 0.2)
+  box-shadow 0 20px 16px -1px rgba($bright-blue, 0.2)
+  transition opacity 250ms
 
   &:hover
     opacity 0.7
@@ -162,10 +168,11 @@ h1
   color $desaturated-blue
   font-weight $font-black
   text-align center
-  margin-top 1rem
+  margin-top 2rem
   cursor pointer
   border none
   background none
+  transition color 250ms
 
   &:hover
     color $dark-blue

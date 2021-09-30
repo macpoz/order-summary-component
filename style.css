@@ -81,9 +81,9 @@ h1 {
   align-items: center;
   width: 100%;
   background-color: #f5f7ff;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   margin-bottom: 2.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2.75rem;
   border-width: 1px;
   border-radius: 0.8rem;
 }
@@ -94,9 +94,15 @@ h1 {
   display: flex;
   margin-left: 1rem;
 }
+@media (min-width: 450px) {
+  .plan-info > div:first-of-type {
+    margin-left: 1.5rem;
+  }
+}
 .plan-info > a {
   font-size: 14px;
   text-decoration: underline;
+  transition: color, opacity 250ms;
 }
 .plan-info > a:hover {
   opacity: 0.7;
@@ -127,6 +133,11 @@ h1 {
   color: #3829e0;
   font-weight: 700;
 }
+@media (min-width: 450px) {
+  .change-plan {
+    margin-right: 1.5rem;
+  }
+}
 .proceed-button {
   font-size: 16px;
   background-color: #3829e0;
@@ -137,7 +148,8 @@ h1 {
   padding-top: 1em;
   padding-bottom: 1em;
   cursor: pointer;
-  box-shadow: 0 12px 10px -1px rgba(56,41,224,0.2);
+  box-shadow: 0 20px 16px -1px rgba(56,41,224,0.2);
+  transition: opacity 250ms;
 }
 .proceed-button:hover {
   opacity: 0.7;
@@ -151,10 +163,11 @@ h1 {
   color: #7280a7;
   font-weight: 900;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   cursor: pointer;
   border: none;
   background: none;
+  transition: color 250ms;
 }
 .cancel-order-button:hover {
   color: #1f2f56;
